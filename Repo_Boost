@@ -15,7 +15,7 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 
-echo 'Questo script nasce a supporto della Community Italiana di Deepin, ma puÚ essere utilizzato per qualsiasi distro Debian Based.'
+echo 'Questo script nasce a supporto della Community Italiana di Deepin, ma pu√≤ essere utilizzato per qualsiasi distro Debian Based.'
 echo ''
 PS3='Seleziona il numero corrispondende al comando che desideri avviare: '
 options=("Aggiungi i Repo Debian e software consigliati" "Termina")
@@ -24,7 +24,7 @@ do
 	case $opt in
 		"Aggiungi i Repo Debian e software consigliati")
 			echo ''
-			echo -e "\e[1;31mOra modificherÚ il tuo Source.List forzando Deepin ad utilizzare il Mirror Italiano GARR, ovviamente una copia del file Source.list verr‡ depositata nella medesima cartella in cui Ë presente questo script\e[0m"
+			echo -e "\e[1;31mOra modificher√≤ il tuo Source.List forzando Deepin ad utilizzare il Mirror Italiano GARR, ovviamente una copia del file Source.list verr√† depositata nella medesima cartella in cui √® presente questo script\e[0m"
 			echo ''
 			sudo apt update && sudo apt install -y curl wget apt-transport-https dirmngr 
 			cd $HOME &
@@ -109,7 +109,7 @@ EOF'
 			sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 2CC26F777B8B44A1
 			sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 818A435C5FCBF54A
 		echo ''
-		echo 'Bene, operativit‡ conclusa'
+		echo 'Bene, operativit√† conclusa'
 		echo -e "\e[1;31mTi ricordo le opzioni: 1.Aggiungi i Repo Debian e software consigliati; 2.Termina\e[0m"
 		;;
 		"Termina")
