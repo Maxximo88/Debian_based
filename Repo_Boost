@@ -90,9 +90,9 @@ EOF'
 			sudo wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb && dpkg -i deb-multimedia-keyring_2016.8.1_all.deb
 			sudo apt-key adv --keyserver pgp.mit.edu
 			--recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-			sudo sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
-			sudo sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D530E028F59EAE4D
-			sudo sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 4B4E7A9523ACD201
+			sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+			sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D530E028F59EAE4D
+			sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 4B4E7A9523ACD201
 			sudo wget -q -O - http://download.opensuse.org/repositories/home:/ivaradi/Debian_9.0/Release.key | apt-key add -
 			sudo wget -O - http://deb.opera.com/archive.key | apt-key add -
 			sudo wget http://download.opensuse.org/repositories/isv:ownCloud:desktop/Debian_8.0/Release.key && apt-key add - < Release.key && rm Release.key
